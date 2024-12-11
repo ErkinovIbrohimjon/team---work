@@ -1,0 +1,8 @@
+@mixin d-flex (){
+    display: flex;
+    align-items: $al-it;
+    justify-content: $js;
+    flex-wrap: $wrp;
+    gap: $gp;
+    
+}
