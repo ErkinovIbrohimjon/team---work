@@ -1,8 +1,18 @@
-@mixin d-flex (){
+@mixin d-flex ($gp:0 ,$wrp : nowrap,$js :flex-start,$al-it:flex-start){
     display: flex;
     align-items: $al-it;
     justify-content: $js;
     flex-wrap: $wrp;
     gap: $gp;
-    
+
+}
+@mixin button($colors:$white,$backg:$pink){
+    padding: 14px 48px;
+    background-color: $backg;
+    border-radius: 220px;
+    border: none;
+    color: $colors;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
 }

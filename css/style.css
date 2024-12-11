@@ -1,1 +1,245 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Thin.woff) format("woff"), url(../fonts/Poppins-Thin.woff2) format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-ExtraLight.woff) format("woff"), url(../fonts/Poppins-ExtraLight.woff2) format("woff2");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Light.woff) format("woff"), url(../fonts/Poppins-Light.woff2) format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.woff) format("woff"), url(../fonts/Poppins-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.woff) format("woff"), url(../fonts/Poppins-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-SemiBold.woff) format("woff"), url(../fonts/Poppins-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Bold.woff) format("woff"), url(../fonts/Poppins-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-ExtraBold.woff) format("woff"), url(../fonts/Poppins-ExtraBold.woff2) format("woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Black.woff) format("woff"), url(../fonts/Poppins-Black.woff2) format("woff2");
+  font-weight: 900;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 63px;
+  font-family: "poppins";
+  background-color: #161616;
+}
+
+header {
+  background-color: aqua;
+}
+
+.hero {
+  margin-top: 64px;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 150px;
+}
+.hero .container aside:nth-child(1) {
+  width: 630px;
+}
+.hero .container aside:nth-child(1) .hero__box {
+  width: 337px;
+  height: 122px;
+  padding: 23px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 0;
+  flex-direction: column;
+  background: url(../../picture/box\ cat\ img.png);
+  border-radius: 15px;
+  position: relative;
+  margin-top: 93px;
+}
+.hero .container aside:nth-child(1) .hero__box p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 3.6px;
+  color: #FFFFFF;
+}
+.hero .container aside:nth-child(1) .hero__box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.hero .container aside:nth-child(1) .hero__box div {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: calc(50% - 21.5px);
+  right: -21.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C75E90;
+  border-radius: 50%;
+}
+.hero .container aside:nth-child(1) .hero__box div i {
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.hero .container aside:nth-child(1) .hero__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  flex-direction: column;
+}
+.hero .container aside:nth-child(1) .hero__item button {
+  padding: 14px 48px;
+  background-color: #C75E90;
+  border-radius: 220px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+.hero .container aside:nth-child(1) .hero__item div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 28px;
+  flex-direction: column;
+}
+.hero .container aside:nth-child(1) .hero__item div h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  line-height: 21px;
+  color: #696969;
+}
+.hero .container aside:nth-child(1) .hero__item div h1 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 69px;
+}
+.hero .container aside:nth-child(1) .hero__item div p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.hero .container aside:nth-child(2) {
+  width: 650px;
+  height: 594px;
+}
+.hero .container aside:nth-child(2) .hero__pic {
+  background: url(../../picture/Vector.png), url(../../picture/Vector.png);
+  background-position: calc(0% - 144px) calc(0% - 144px), calc(100% + 144px) calc(100% + 144px);
+  background-size: 288px;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+.hero .container aside:nth-child(2) .hero__pic .one {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  border: 5px solid #C75E90;
+  background: url(../../picture/1\ cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 80px;
+  left: calc(0% - 65.5px);
+}
+.hero .container aside:nth-child(2) .hero__pic .two {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  border: 5px solid #C75E90;
+  background: url(../../picture/2\ cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 320px;
+  left: calc(0% - 65.5px);
+}
+.hero .container aside:nth-child(2) .hero__pic .three {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  border: 5px solid #C75E90;
+  background: url(../../picture/3\ cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: calc(0% - 22.75px);
+  left: 80px;
+}
+.hero .container aside:nth-child(2) .hero__pic .four {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  border: 5px solid #C75E90;
+  background: url(../../picture/4\ cat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: calc(0% - 22.75px);
+  left: 280px;
+}
+.hero .container aside:nth-child(2) .hero__pic .main-pic {
+  width: 565.14px;
+  height: 557px;
+  background: url(../../picture/Mask\ group.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

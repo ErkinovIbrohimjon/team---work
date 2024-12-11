@@ -1,0 +1,151 @@
+.hero{
+    margin-top: 64px;
+    .container{
+        @include d-flex($gp:150px,$js:center,$al-it:center);
+        aside:nth-child(1){
+            width: 630px;
+            .hero__box{
+                width: 337px;
+                height: 122px;
+                padding: 23px 20px;
+                @include d-flex($gp:0,$js:flex-end,$al-it:flex-start);
+                flex-direction: column;
+                background: url(../../picture/box\ cat\ img.png);
+                border-radius: 15px;
+                position: relative;
+                margin-top: 93px;
+                p{
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    letter-spacing: 3.6px;
+                    color: $white;
+                }
+                h3{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    color: $white;
+                }
+                div{
+                    width: 43px;
+                    height: 43px;
+                    position: absolute;
+                    top: calc(50% - 21.5px);
+                    right: -21.5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $pink;
+                    border-radius: 50%;
+                    i{
+                        font-size: 25px;
+                        color: $white;
+                    }
+                }
+            }
+            .hero__item{
+                @include d-flex($gp:40px,$js:center,$al-it:flex-start);
+                flex-direction: column;
+                button{
+                    @include button();
+                }
+                div{
+                    @include d-flex($gp:28px,$js:center,$al-it:flex-start);
+                    flex-direction: column;
+                    h3{
+                        font-size: 14px;
+                        font-weight: 700;
+                        letter-spacing: 3.6px;
+                        line-height: 21px;
+                        color: $grey;
+                    }
+                    h1{
+                        font-size: 46px;
+                        font-weight: 700;
+                        color: $white;
+                        line-height: 69px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        aside:nth-child(2){
+            width: 650px;
+            height: 594px;
+            .hero__pic{
+                background: url(../../picture/Vector.png), url(../../picture/Vector.png);
+                background-position: calc(0% - 144px) calc(0% - 144px) ,calc(100% + 144px) calc(100% + 144px)   ;
+                background-size: 288px;
+                background-repeat: no-repeat;
+                .one{
+                    width: 131px;
+                    height: 131px;
+                    border-radius: 50%;
+                    border: 5px solid $pink;
+                    background: url(../../picture/1\ cat.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: 80px;
+                    left: calc(0% - 65.5px);
+                }
+                .two{
+                    width: 131px;
+                    height: 131px;
+                    border-radius: 50%;
+                    border: 5px solid $pink;
+                    background: url(../../picture/2\ cat.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: 320px;
+                    left: calc(0% - 65.5px);
+                }
+                .three{
+                    width: 131px;
+                    height: 131px;
+                    border-radius: 50%;
+                    border: 5px solid $pink;
+                    background: url(../../picture/3\ cat.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    bottom: calc(0% - 22.75px);
+                    left: 80px;
+                }
+                .four{
+                    width: 131px;
+                    height: 131px;
+                    border-radius: 50%;
+                    border: 5px solid $pink;
+                    background: url(../../picture/4\ cat.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    bottom: calc(0% - 22.75px);
+                    left: 280px;
+                }
+                height: 100%;
+                position: relative;
+                .main-pic{
+                    width: 565.14px;
+                    height: 557px;
+                    background: url(../../picture/Mask\ group.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
