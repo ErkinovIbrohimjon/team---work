@@ -1,5 +1,10 @@
+.black__nain{
+        width: 100%;
+        height: 64px;
+        background-color:$bg-color;
+}
 .hero{
-    margin-top: 64px;
+    background-color: $bg-color;
     .container{
         @include d-flex($gp:150px,$js:center,$al-it:center);
         aside:nth-child(1){
@@ -148,4 +153,5 @@
             }
         }
     }
+    
 }
