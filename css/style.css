@@ -59,11 +59,19 @@ a {
 }
 
 body {
+  background-color: #1D1D1D;
+}
+
+body > .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 63px;
+  padding: 0 0;
   font-family: "poppins";
   background-color: #1D1D1D;
+}
+
+.hero {
+  padding: 0 63px;
 }
 
 .header {
@@ -132,6 +140,9 @@ body {
 .hero {
   background-color: #161616;
   position: relative;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border: none;
 }
 .hero .container {
   display: flex;
@@ -500,6 +511,40 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  color: #FFFFFF;
+}
+
+.cards-bottom {
+  margin-top: 65px;
+}
+.cards-bottom .bottom-cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.cards-bottom .bottom-cards div {
+  position: relative;
+}
+.cards-bottom .bottom-cards div img {
+  width: 225px;
+  height: 233px;
+}
+.cards-bottom .bottom-cards div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: calc(0% - 35px);
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #C75E90;
+}
+.cards-bottom .bottom-cards div span i {
+  font-size: 35px;
   color: #FFFFFF;
 }
 

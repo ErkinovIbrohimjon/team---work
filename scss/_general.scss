@@ -11,11 +11,16 @@ li{
 a{
   text-decoration: none;
 }
-
-body {
+body{
+  background-color: $body-color;
+}
+body > .container{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 63px;
+  padding: 0 0;
   font-family: 'poppins';
   background-color: $body-color; 
+}
+.hero{
+  padding: 0 63px;
 }
