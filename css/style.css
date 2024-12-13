@@ -133,6 +133,119 @@ body > .container {
   background-color: #d45980;
 }
 
+.rooms {
+  display: flex;
+  justify-content: center;
+  gap: 97px;
+  margin-top: 100px;
+}
+.rooms aside:nth-child(2) h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 4px;
+  color: #696969;
+}
+.rooms aside:nth-child(2) h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.rooms aside:nth-child(2) ul {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  gap: 35px;
+}
+.rooms aside:nth-child(2) ul li {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  justify-content: first baseline;
+  color: #FFFFFF;
+}
+.rooms aside:nth-child(2) ul li .line {
+  width: 80%;
+  height: 1px;
+  background-color: #696969;
+  margin-left: 10%;
+}
+.rooms aside:nth-child(2) ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rooms aside:nth-child(2) ul li .circ {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C75E90;
+  border-radius: 50%;
+  position: relative;
+}
+.rooms aside:nth-child(2) ul li:nth-child(1) {
+  align-items: first baseline;
+}
+
+.celebrate {
+  margin-top: 50px;
+  color: white;
+}
+.celebrate .celebrate__useless-p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.36em;
+  color: rgb(105, 105, 105);
+}
+.celebrate .celebrate__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin: 20px 0px;
+}
+.celebrate .center__celebrate-div {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.celebrate .center__celebrate-div p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.celebrate .celebrate__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.celebrate .first__celebrate {
+  width: 33%;
+  padding: 50px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 20px;
+  margin-top: 60px;
+}
+.celebrate .first__celebrate .celebrate__card-text {
+  margin: 30px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.celebrate .first__celebrate .celebrate__card-wrapper {
+  display: flex;
+  gap: 13px;
+}
+.celebrate .first__celebrate .second__user-name {
+  margin-top: 20px;
+}
+
 .black__nain {
   width: 100%;
   height: 64px;
@@ -548,6 +661,141 @@ body > .container {
 .cards-bottom .bottom-cards div span i {
   font-size: 35px;
   color: #FFFFFF;
+}
+
+.inputs {
+  text-align: center;
+  padding: 20px;
+  margin-top: 90px;
+  padding: 50px 200px;
+  background: #161616;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  border: 1px #FFFFFF solid;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  color: #696969;
+}
+
+::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+::placeholder {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 48%;
+  padding: 25px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+}
+
+.input input::-moz-placeholder {
+  color: #aaa;
+}
+
+.input input::placeholder {
+  color: #aaa;
+}
+
+.input.full-width {
+  width: 100%;
+}
+
+.input.full-width input {
+  width: 100%;
+}
+
+.input .icon {
+  position: relative;
+}
+
+.input .icon input {
+  padding-right: 40px;
+}
+
+.input .icon i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e91e63;
+}
+
+.input .icon i:hover {
+  cursor: pointer;
+}
+
+.input .icon i:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.input .arrow {
+  position: relative;
+}
+
+.input .arrow input {
+  padding-right: 40px;
+}
+
+.input .arrow i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.input .arrow i:hover {
+  cursor: pointer;
+}
+
+.input .arrow i:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.btn {
+  padding: 14px 48px;
+  background-color: #C75E90;
+  border-radius: 220px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  width: 20%;
+  margin-left: 40%;
 }
 
 .nekolnn-section {
