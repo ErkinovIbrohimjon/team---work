@@ -60,6 +60,7 @@ a {
 
 body {
   background-color: #1D1D1D;
+  flex-direction: column;
 }
 
 body > .container {
@@ -68,6 +69,7 @@ body > .container {
   padding: 0 0;
   font-family: "poppins";
   background-color: #1D1D1D;
+  flex-direction: column;
 }
 
 .hero {
@@ -555,7 +557,7 @@ body > .container {
   padding: 2rem;
   background-color: #161616;
   border-radius: 20px;
-  color: #fff;
+  color: #FFFFFF;
   margin-top: 134px;
 }
 .nekolnn-section .nekolnn-content {
@@ -565,7 +567,7 @@ body > .container {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #aaaaaa;
+  color: #696969;
   font-weight: 700;
   letter-spacing: 3.6px;
 }
@@ -604,14 +606,14 @@ body > .container {
 .pricing-section {
   text-align: center;
   padding: 3rem;
-  background-color: #1e1e1e;
   color: #fff;
+  margin-top: 67px;
 }
 .pricing-section h3 {
-  font-size: 1rem;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #aaaaaa;
-  letter-spacing: 2px;
+  color: #696969;
+  letter-spacing: 4px;
 }
 .pricing-section h1 {
   font-size: 2.5rem;
@@ -625,18 +627,53 @@ body > .container {
 }
 .pricing-section .pricing-cards {
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
   height: 500px;
   border-radius: 5px;
+  align-items: center;
+  margin-top: 100px;
+}
+.pricing-section .pricing-cards .card:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #161616;
+  height: 480px;
+}
+.pricing-section .pricing-cards .card:nth-child(3) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #161616;
+  height: 480px;
+}
+.pricing-section .pricing-cards .featured {
+  height: 577px;
+  background-color: #C75E90;
+}
+.pricing-section .pricing-cards .featured ul {
+  justify-content: space-evenly;
+}
+.pricing-section .pricing-cards .featured ul li {
+  margin-top: 40px;
+}
+.pricing-section .pricing-cards .featured button {
+  background-color: #8E345F;
+  margin-top: 90px;
 }
 .pricing-section .pricing-cards .card {
-  flex: 1;
-  background-color: #2c2c2c;
+  width: 444px;
   border-radius: 20px;
   padding: 2rem;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: relative;
+  border: none;
+  position: relative;
+}
+.pricing-section .pricing-cards .card i {
+  position: absolute;
+  right: calc(0% + 40px);
+  font-size: 50px;
 }
 .pricing-section .pricing-cards .card h2 {
   font-size: 1.5rem;
@@ -648,6 +685,8 @@ body > .container {
   font-weight: bold;
   margin: 1rem 0;
   text-align: center;
+  display: flex;
+  align-items: last baseline;
 }
 .pricing-section .pricing-cards .card .price span {
   display: block;
@@ -657,13 +696,17 @@ body > .container {
 .pricing-section .pricing-cards .card ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .pricing-section .pricing-cards .card ul li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1rem;
-  color: #ccc;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 21px;
   margin: 0.5rem 0;
 }
 .pricing-section .pricing-cards .card ul li::before {
