@@ -503,6 +503,13 @@ body {
   color: #FFFFFF;
 }
 
+.cards-bottom {
+  margin-top: 65px;
+}
+.cards-bottom .bottom-cards {
+  margin-top: 65px;
+}
+
 .nekolnn-section {
   display: flex;
   align-items: center;
