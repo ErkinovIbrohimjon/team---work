@@ -102,6 +102,12 @@
       }
       li:nth-child(1){
         align-items: first baseline;
+        .circ{
+          width: 50px;
+        }
+        div{
+          margin-left:8px;
+        }
       }
     }
   }

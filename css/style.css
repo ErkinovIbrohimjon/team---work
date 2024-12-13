@@ -190,6 +190,12 @@ body > .container {
 .rooms aside:nth-child(2) ul li:nth-child(1) {
   align-items: first baseline;
 }
+.rooms aside:nth-child(2) ul li:nth-child(1) .circ {
+  width: 50px;
+}
+.rooms aside:nth-child(2) ul li:nth-child(1) div {
+  margin-left: 8px;
+}
 
 .celebrate {
   margin-top: 50px;
@@ -667,7 +673,7 @@ body > .container {
   text-align: center;
   padding: 20px;
   margin-top: 90px;
-  padding: 50px 200px;
+  padding: 50px 100px;
   background: #161616;
   height: 1000px;
   display: flex;
@@ -682,14 +688,6 @@ h3 {
   font-weight: 700;
   letter-spacing: 3.6px;
   color: #696969;
-}
-
-::-moz-placeholder {
-  color: #FFFFFF;
-}
-
-::placeholder {
-  color: #FFFFFF;
 }
 
 h1 {
@@ -710,6 +708,12 @@ p {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.input ::-moz-placeholder {
+  color: #FFFFFF;
+}
+.input ::placeholder {
+  color: #FFFFFF;
+}
 
 .input input {
   width: 48%;
@@ -729,23 +733,23 @@ p {
   color: #aaa;
 }
 
-.input.full-width {
+.input.--full-width {
   width: 100%;
 }
 
-.input.full-width input {
+.input.--full-width input {
   width: 100%;
 }
 
-.input .icon {
+.input .--icon {
   position: relative;
 }
 
-.input .icon input {
+.input .--icon input {
   padding-right: 40px;
 }
 
-.input .icon i {
+.input .--icon i {
   position: absolute;
   right: 15px;
   top: 50%;
@@ -753,11 +757,11 @@ p {
   color: #e91e63;
 }
 
-.input .icon i:hover {
+.input .--icon i:hover {
   cursor: pointer;
 }
 
-.input .icon i:active {
+.input .--icon i:active {
   transform: translateY(-50%) scale(0.95);
 }
 
@@ -765,11 +769,11 @@ p {
   position: relative;
 }
 
-.input .arrow input {
+.input .--arrow input {
   padding-right: 40px;
 }
 
-.input .arrow i {
+.input .--arrow i {
   position: absolute;
   right: 15px;
   top: 50%;
@@ -785,7 +789,7 @@ p {
   transform: translateY(-50%) scale(0.95);
 }
 
-.btn {
+.input__button {
   padding: 14px 48px;
   background-color: #C75E90;
   border-radius: 220px;

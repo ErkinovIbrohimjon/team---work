@@ -364,7 +364,7 @@
     text-align: center;
     padding: 20px;
     margin-top: 90px;
-    padding: 50px 200px;
+    padding: 50px 100px;
     background: $bg-color;
     height: 1000px;
     display: flex;
@@ -378,9 +378,6 @@ h3{
     font-weight: 700;
     letter-spacing: 3.6px;
     color: $grey;
-}
-::placeholder{
-    color: $white;
 }
 h1 {
     font-size: 40px;
@@ -397,6 +394,10 @@ p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    
+    ::placeholder{
+        color: $white;
+    }
 }
 .input input {
     width: 48%;
@@ -410,38 +411,38 @@ p {
 .input input::placeholder {
     color: #aaa;
 }
-.input.full-width {
+.input.--full-width {
     width: 100%;
 }
-.input.full-width input {
-    width: 100%;
+.input.--full-width input {
+    width: 100%;    
 }
-.input .icon {
+.input .--icon {
     position: relative;
 }
-.input .icon input {
+.input .--icon input {
     padding-right: 40px;
 }
-.input .icon i {
+.input .--icon i {
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
     color: #e91e63;
 }
-.input .icon i:hover {
+.input .--icon i:hover {
     cursor: pointer;
 }
-.input .icon i:active {
+.input .--icon i:active {
     transform: translateY(-50%) scale(0.95);
 }
 .input .arrow {
     position: relative;
 }
-.input .arrow input {
+.input .--arrow input {
     padding-right: 40px;
 }
-.input .arrow i {
+.input .--arrow i {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -454,7 +455,7 @@ p {
 .input .arrow i:active {
     transform: translateY(-50%) scale(0.95);
 }
-.btn {
+.input__button {
     @include button();
     width: 20%;
     margin-left: 40%;
