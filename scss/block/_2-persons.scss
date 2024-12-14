@@ -85,12 +85,12 @@
             }
         }
         aside:nth-child(2){
-            width: 650px;
+            max-width: 70%;
             height: 594px;
             .hero__pic{
                 background: url(../../picture/Vector.png), url(../../picture/Vector.png);
                 background-position: calc(0% - 144px) calc(0% - 144px) ,calc(100% + 144px) calc(100% + 144px)   ;
-                background-size: 288px;
+                background-size: cover;
                 background-repeat: no-repeat;
                 .one{
                     width: 131px;
@@ -287,7 +287,7 @@
                 color: $white;
             }
             p{
-                font-size: 14px;
+                font-size: 30%;
                 font-weight: 400;
                 line-height: 21px;
                 color: $white;
@@ -312,10 +312,13 @@
             }
         }
         .other-card {
-            width: 300px;
+            max-width: 30%;
             gap: 28px;
             display: flex;
             flex-direction: column;
+            img{
+                max-width: 90%;
+            }
             h2{
                 font-size: 24px;
                 font-weight: 700;
@@ -334,11 +337,12 @@
 .cards-bottom{
     margin-top: 65px;
     .bottom-cards{
-        @include d-flex($gp:20px,$js:center ,$al-it:flex-start);
+        @include d-flex($gp:3%,$js:center ,$al-it:flex-start);
         div{
+            max-width: 15%;
             position: relative;
             img{
-                width: 225px;
+                max-width: 100%;
                 height: 233px;
             }
             span{
